@@ -8,10 +8,11 @@
 
 | Behavior | Input | Output |
 | -------- | :---------: | :---------: |
-| User enters a word and a sentence that doesn't use inputted word | Word: "burrito." Sentence: "I like tacos." | "Your word shows up 0 times in your sentence." |
+| User enters a word and a sentence that doesn't use inputted word | Word: "burrito" Sentence: "I like tacos." | "Your word shows up 0 times in your sentence." |
+| User enters a word and a sentence containing only that word | Word: "egg" Sentence: "egg" | "Your word shows up 1 time in your sentence." |
 | User enters a word and a sentence that technically contains the inputted word, but only as part of another word" | Word: "cook." Sentence: "I love to watch a good <strong>cook</strong>ing show from time to time." | "Your word shows up 0 times in your sentence." |
-| User enters a word and a sentence that contains the inputted word once | Word: "burritos." Sentence: "The only thing I miss about living in CA is the burritos." | "Your word shows up 1 time in your sentence." |
-| User enters a word and a sentence that contains the inputted word twice | Word: "cat" Sentence: "My cat loves your cat." | "Your word shows up 2 times in your sentence." |
+| User enters a word and a sentence that contains the inputted word once | Word: "burritos." Sentence: "The only things I miss about living in CA are burritos and  sunshine." | "Your word shows up 1 time in your sentence." |
+| User enters a word and a sentence that contains the inputted word twice | Word: "cat" Sentence: "My cat loves your cat so much!" | "Your word shows up 2 times in your sentence." |
 
 
 
@@ -20,7 +21,7 @@
 * _Clone this repository and navigate to the "WordCounter.Solution" project directory_
 * _Navigate to "WordCounter.Tests"_
 * _Run the command "dotnet restore"_
-* _Navigate back up to the "WordCounter" directory
+* _Navigate back up to the "WordCounter" directory_
 * _Run the command "dotnet run"_
 
 ## Technologies Used
