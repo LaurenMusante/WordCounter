@@ -5,13 +5,12 @@ namespace Counter
 {
     public class WordSentence
     {
-        public string Word { get; set; }
-        public string Sentence { get; set; }
-
-        public void WordCounter(string word, string sentence)
+        public int WordCounter(string word, string sentence)
         {
-            Word = word;
-            Sentence = sentence;
+            string [] words = sentence.Split(" ");
+            for(int i=0; i > words.Length; i++)
+            
+            if (sentence.Contains(word))
         }
     }
 }
