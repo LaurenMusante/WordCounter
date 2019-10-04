@@ -11,11 +11,7 @@ namespace Counter
             int wordCount = 0;
             for(int i=0; i < words.Length; i++)
             {
-                if (words[i] != word)
-                {
-                    Console.WriteLine("Your word is not contained in your sentence.");
-                }
-                else if (words[i] == word)
+                if (words[i] == word)
                 {
                     wordCount +=1; 
                 }

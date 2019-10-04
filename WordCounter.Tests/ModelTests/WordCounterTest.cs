@@ -21,12 +21,12 @@ namespace Counter.Test
         [TestMethod]
         public void WordCounter_OneWordInSentence_1()
         {
-            Assert.AreEqual(1, testWordSentence.WordCounter("bananas", "I like bananas"));
+            Assert.AreEqual(1, testWordSentence.WordCounter("bananas", "My favorite thing to eat is bananas with peanut butter."));
         }
         [TestMethod]
         public void WordCounter_TwoWordsInSentence_2()
         {
-            Assert.AreEqual(2, testWordSentence.WordCounter("shoes", "My shoes look just like your shoes"));
+            Assert.AreEqual(2, testWordSentence.WordCounter("tennis", "My tennis shoes look just like your tennis shoes"));
         }
     }
 }
