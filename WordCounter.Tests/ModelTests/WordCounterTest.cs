@@ -26,7 +26,12 @@ namespace Counter.Test
         [TestMethod]
         public void WordCounter_TwoWordsInSentence_2()
         {
-            Assert.AreEqual(2, testWordSentence.WordCounter("tennis", "My tennis shoes look just like your tennis shoes"));
+            Assert.AreEqual(2, testWordSentence.WordCounter("shoes", "I have shoes that belong to be and shoes that belong to my brother."));
+        }
+        [TestMethod]
+        public void WordCounter_FiveWordsInSentence_5()
+        {
+            Assert.AreEqual(5, testWordSentence.WordCounter("code", "I heard you like coding so I wrote code that can code while you code code that can code"));
         }
     }
 }

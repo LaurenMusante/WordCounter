@@ -8,7 +8,7 @@ class Program
     {
         Console.WriteLine("Please enter a word: ");
         string word = Console.ReadLine();
-        Console.WriteLine("Please enter a sentence using the word you selected: ");
+        Console.WriteLine("Please enter a sentence using the word you selected (or not!): ");
         string sentence = Console.ReadLine();
         WordSentence myWordSentence = new WordSentence();
         int wordCount = myWordSentence.WordCounter(word, sentence);
