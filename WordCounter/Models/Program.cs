@@ -13,11 +13,11 @@ class Program
         WordSentence myWordSentence = new WordSentence();
         int wordCount = myWordSentence.WordCounter(word, sentence);
         
-        if (myWordSentence.WordCounter(word, sentence) == 0)
+        if (wordCount == 0)
             {
                 Console.WriteLine("Your sentence does not contain your word ☹️");
             }
-        else if (myWordSentence.WordCounter(word, sentence) == wordCount)
+        else 
             {
                 Console.WriteLine("Your sentence contains your word " + wordCount + " times!");
             }
