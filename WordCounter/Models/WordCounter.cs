@@ -12,15 +12,13 @@ namespace Counter
             int wordCount = 0;
             for(int i=0; i < words.Length; i++)
             {
-                if (words[i] == word) 
+                char [] charsToGetRidOf = { '.', ',', '?', '!', ';'};
+                string trimmedWord = words[i].TrimEnd(charsToGetRidOf);
+                if (trimmedWord == word) 
                 {
                     wordCount +=1; 
                 }
             }
-                // if (lastWord == word)
-                // {
-                //     wordCount +=1;
-                // }
             return wordCount;
         }
     }
